@@ -1,0 +1,101 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/sea.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    position: relative;
+}
+.header{
+   color:rgb(33, 104, 104);
+   text-align: center;
+   height: 6.75rem;
+}
+.cityName{
+   
+    font-size: 2rem;
+    margin: 0;
+}
+.tempDegre{
+    font-size: 3.6rem;
+    margin:0;
+}
+.showWeatherBox{
+    border-radius: 1rem;
+    width: 35rem;
+    height: auto;
+    padding: 1.5rem;
+    background:rgba(0, 0, 0, 0.4);
+    box-shadow:20px 20px 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: 15px;   
+    overflow: hidden;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+
+.inputBox{
+    display: flex;
+   justify-content: center;
+   margin-bottom: 2rem;
+}
+
+.inputBox>input{
+    font-size: 1rem;
+    color: rgb(167, 163, 163);
+    width: 60%;
+    background:rgba(0, 0, 0, 0.6);
+    outline: none;
+    height: 2rem;
+    border: none;
+    padding-left: 10px;
+    border-radius:0.3rem ;
+    -webkit-border-radius:0.3rem ;
+    -moz-border-radius:0.3rem ;
+    -ms-border-radius:0.3rem ;
+    -o-border-radius:0.3rem ;
+}
+
+.infoBox{
+    color: rgb(160, 158, 158);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+} 
+
+.infoBox>div{
+    padding: 0.8rem 0.5rem;
+    height: 2rem;
+    margin: 0.5rem;
+    font-size: 0.95rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+
+
+.sunTimig{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+}
+.sunsetTimig{
+    display: flex;
+    align-items: flex-end;
+}
